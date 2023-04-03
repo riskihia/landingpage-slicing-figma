@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Merriweather", serif;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  padding: 1rem 15rem 0 15rem;
+  color: white;
+  background: conic-gradient(
+    from 195.98deg at 73.54% 17.77%,
+    #4629f2 0deg,
+    #13c6ff 125.63deg,
+    #b94dfb 215.62deg,
+    #ff53ee 294.38deg,
+    #f3b960 360deg
+  );
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(25px);
+}
+
+/* Nav */
+nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  font-size: 1.6rem;
+  align-items: center;
+}
+.logo {
+  flex-grow: 2;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  flex-grow: 8;
+  display: flex;
+  align-items: center;
+}
+.navbar-list {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.navbar-list li {
+  margin-inline-start: 3rem;
+  padding: 0.3rem 1rem;
+}
+
+.login-register {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline-end: 1rem;
+}
+.login-button,
+.register-button {
+  padding: 0.3rem 1rem;
+  margin-inline-start: 0.5rem;
+}
+.register-button {
+  border-radius: 0.4rem;
+  background-color: rgb(213, 184, 254);
+  color: rgb(17, 17, 17);
+  font-weight: bold;
+}
+
+.x-button {
+  display: none;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* animation */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* query */
+@media (max-width: 992px) {
+  header {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .navbar {
+    /* display: none; */
+    position: absolute;
+    background-color: #4629f2;
+    top: 50px;
+    right: 0;
+    padding-block: 1rem;
+  }
+  .show {
+    visibility: show;
+    animation: fadeInAnimation ease-in-out 1s;
+    animation-fill-mode: forwards;
+  }
+  .hidden {
+    visibility: hidden;
+    animation: fadeOutAnimation ease-in-out 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .logo h1 {
+    margin: 0;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+  }
+  .navbar-list li {
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+
+  .login-register {
+    display: none;
+  }
+
+  .x-button {
+    display: block;
+  }
+}
