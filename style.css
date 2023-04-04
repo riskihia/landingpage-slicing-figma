@@ -259,6 +259,82 @@ main {
   width: 40rem;
 }
 
+/* SECTION Price */
+.price-container {
+  position: relative;
+  z-index: 4;
+  padding: 7rem 15rem 5rem 15rem;
+}
+.price {
+  /* border: 1px solid red; */
+  /* margin-block: 3rem; */
+}
+.price-heading {
+  text-align: center;
+  font-size: 3rem;
+
+  margin-block: 2rem;
+}
+.price-text {
+  margin: 1rem auto;
+  text-align: center;
+  width: 70%;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.price-card {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-block: 3rem;
+}
+.price-items {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 30%;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.price-items h5 {
+  border-radius: 1.2rem 1.2rem 0 0;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.starter {
+  background-color: #4635f3;
+}
+.profesional {
+  background-color: #f5ac76;
+}
+.enterprice {
+  background-color: #ff5391;
+}
+.card-items {
+  padding: 2rem;
+}
+.card-items h6 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0 1rem 1rem 1rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.card-items p {
+  text-align: start;
+}
+.card-items p i {
+  color: #4629f2;
+  margin-inline-end: 1rem;
+}
+
+.card-button {
+  background-color: #4635f3;
+  display: inline-block;
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+}
 /* animation */
 @keyframes fadeInAnimation {
   from {
@@ -384,6 +460,7 @@ main {
     /* padding: 7rem 15rem 5rem 15rem; */
     background-color: #f5ac76;
   }
+
   .demo {
     flex-direction: column;
   }
@@ -403,5 +480,18 @@ main {
 
   .demo-img {
     width: 32rem;
+  }
+
+  /* Section price */
+  .price-container {
+    padding: 7rem 1rem 0.5rem 1rem;
+  }
+  .price-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-items {
+    margin-bottom: 2rem;
+    width: 80%;
   }
 }
