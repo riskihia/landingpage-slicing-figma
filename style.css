@@ -109,13 +109,14 @@ nav {
   position: relative;
   z-index: 1;
   display: flex;
-  margin-block-start: 7rem;
+  margin-block-start: 3rem;
 }
 
 .hero-left {
   flex: 3;
 }
 .hero-left h1 {
+  margin-block-start: 7rem;
   font-size: 5.2rem;
   margin-block-end: 2rem;
 }
@@ -135,8 +136,36 @@ nav {
 .fa-play {
   padding-inline-end: 1rem;
 }
+
 .hero-right {
   flex: 2;
+  padding: 2rem 3rem;
+}
+
+.chat-right,
+.chat-left {
+  display: flex;
+}
+
+.chat-right {
+  justify-content: flex-end;
+}
+.chat-right p {
+  max-width: 80%;
+  background-color: #4629f2;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem 0 0.8rem 0.8rem;
+  margin: 2rem 0;
+}
+
+.chat-left {
+  justify-content: flex-start;
+}
+.chat-left p {
+  max-width: 80%;
+  background-color: rgb(158, 158, 158, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 0.8rem 0 0.8rem 0.8rem;
 }
 
 /* animation */
