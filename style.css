@@ -11,6 +11,8 @@ html {
 }
 body {
   font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+  position: relative;
 }
 a,
 a:hover,
@@ -18,6 +20,8 @@ a:active {
   text-decoration: none;
   color: white;
 }
+
+/* Header section */
 header {
   width: 100%;
   height: 100vh;
@@ -49,7 +53,7 @@ nav {
   position: relative;
   z-index: 1;
   display: flex;
-  font-size: 1.6rem;
+
   align-items: center;
 }
 .logo {
@@ -57,6 +61,9 @@ nav {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+}
+.logo h1 {
+  font-weight: 900;
 }
 
 .navbar {
@@ -97,9 +104,39 @@ nav {
   display: none;
 }
 
+/* Hero section */
 .hero-section {
   position: relative;
   z-index: 1;
+  display: flex;
+  margin-block-start: 7rem;
+}
+
+.hero-left {
+  flex: 3;
+}
+.hero-left h1 {
+  font-size: 5.2rem;
+  margin-block-end: 2rem;
+}
+.hero-left p {
+  color: rgb(255, 255, 255, 0.5);
+  margin-block-end: 5rem;
+  padding-inline-end: 5rem;
+}
+.hero-left a {
+  background-color: rgb(255, 255, 255, 0.1);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+.get-started {
+  background-color: rgb(41, 41, 41) !important;
+}
+.fa-play {
+  padding-inline-end: 1rem;
+}
+.hero-right {
+  flex: 2;
 }
 
 /* animation */
@@ -125,8 +162,11 @@ nav {
 @media (max-width: 992px) {
   header {
     padding: 0.5rem 1rem 0 1rem;
+    height: 100%;
   }
-
+  header::after {
+    height: 100%;
+  }
   .navbar {
     /* display: none; */
     position: absolute;
@@ -149,6 +189,7 @@ nav {
   .logo h1 {
     font-size: 3.2rem;
     margin: 0;
+    font-weight: 900;
   }
 
   .navbar-list {
@@ -165,5 +206,29 @@ nav {
 
   .x-button {
     display: block;
+  }
+
+  /* Hero section */
+  .hero-section {
+    flex-direction: column;
+    margin-block-start: 2rem;
+  }
+  .hero-left h1 {
+    font-size: 3rem;
+    margin-block-end: 2rem;
+  }
+  .hero-left p {
+    color: rgb(255, 255, 255, 0.5);
+    margin-block-end: 2rem;
+    padding-inline-end: 2rem;
+  }
+  .hero-left a {
+    background-color: rgb(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+  }
+
+  .hero-right {
+    margin-block-start: 3rem;
   }
 }
