@@ -174,7 +174,9 @@ main {
   padding: 7rem 15rem 5rem 15rem;
   text-align: center;
 }
-
+.feature {
+  margin-bottom: 5rem;
+}
 .feature h1 {
   font-size: 4.2rem;
   width: 70%;
@@ -207,6 +209,54 @@ main {
 }
 .items p {
   color: rgba(90, 90, 90, 0.8);
+}
+
+/* SECTION Demo */
+.demo-container {
+  position: relative;
+  z-index: 3;
+  padding: 7rem 15rem 5rem 15rem;
+  background-color: #f5ac76;
+}
+.demo {
+  display: flex;
+  text-align: start;
+  align-items: center;
+}
+
+.demo-left {
+  padding-inline-end: 10rem;
+}
+.demo-left h3 {
+  font-size: 3.4rem;
+  margin-bottom: 2rem;
+}
+.demo-left-text {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.demo-button {
+  background-color: black;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin: 3rem 0;
+}
+
+.demo-text {
+  display: flex;
+}
+.demo-text h4 {
+  font-weight: bold;
+}
+.demo-text-left {
+  padding-right: 1rem;
+}
+.demo-text-right {
+  padding-left: 1rem;
+}
+.demo-img {
+  width: 40rem;
 }
 
 /* animation */
@@ -324,5 +374,34 @@ main {
   }
   .items {
     padding: 0.5rem 3rem;
+  }
+
+  /* SECTION demo  */
+  .demo-container {
+    position: relative;
+    z-index: 3;
+    padding: 7rem 1rem 0.5rem 1rem;
+    /* padding: 7rem 15rem 5rem 15rem; */
+    background-color: #f5ac76;
+  }
+  .demo {
+    flex-direction: column;
+  }
+  .demo-left {
+    padding-inline-end: 1rem;
+  }
+  .demo-text {
+    flex-direction: column;
+  }
+  .demo-text-left {
+    padding-right: 0;
+  }
+  .demo-text-right {
+    margin-top: 2rem;
+    padding-left: 0;
+  }
+
+  .demo-img {
+    width: 32rem;
   }
 }
