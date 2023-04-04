@@ -322,4 +322,7 @@ main {
     grid-template-columns: auto;
     grid-gap: 1rem;
   }
+  .items {
+    padding: 0.5rem 3rem;
+  }
 }
