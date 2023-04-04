@@ -24,7 +24,7 @@ a:active {
 /* Header section */
 header {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   left: 0px;
   top: 0px;
   padding: 1rem 15rem 0 15rem;
@@ -44,16 +44,15 @@ header::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   backdrop-filter: blur(25px);
 }
 
 /* Nav */
 nav {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
-
   align-items: center;
 }
 .logo {
@@ -168,6 +167,48 @@ nav {
   border-radius: 0.8rem 0 0.8rem 0.8rem;
 }
 
+/* SECTION feature */
+main {
+  position: relative;
+  z-index: 3;
+  padding: 7rem 15rem 5rem 15rem;
+  text-align: center;
+}
+
+.feature h1 {
+  font-size: 4.2rem;
+  width: 70%;
+  margin: 2rem auto;
+}
+.feature-text {
+  width: 60%;
+  margin: 0 auto;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.produk {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3rem;
+  padding-block-start: 5rem;
+}
+.items {
+  text-align: start;
+  text-align: start;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+.items i {
+  color: #4635f3;
+}
+.items h3 {
+  margin-block: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.items p {
+  color: rgba(90, 90, 90, 0.8);
+}
+
 /* animation */
 @keyframes fadeInAnimation {
   from {
@@ -245,6 +286,7 @@ nav {
   .hero-left h1 {
     font-size: 3rem;
     margin-block-end: 2rem;
+    margin-block-start: 1rem;
   }
   .hero-left p {
     color: rgb(255, 255, 255, 0.5);
@@ -259,5 +301,25 @@ nav {
 
   .hero-right {
     margin-block-start: 3rem;
+  }
+
+  /* Mobile view main Section */
+  main {
+    padding: 10rem 1rem 0.5rem 1rem;
+  }
+  .feature h1 {
+    font-size: 2.2rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .feature-text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0, 0.5);
+  }
+  .produk {
+    grid-template-columns: auto;
+    grid-gap: 1rem;
   }
 }
