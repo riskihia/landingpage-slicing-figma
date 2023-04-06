@@ -51,6 +51,7 @@ header::after {
 /* Nav */
 nav {
   position: relative;
+
   z-index: 2;
   display: flex;
   align-items: center;
@@ -335,6 +336,55 @@ main {
   border-radius: 0.8rem;
   margin: 1rem 0;
 }
+
+/* Section footer */
+footer {
+  position: relative;
+  z-index: 4;
+  padding: 7rem 15rem 2rem 15rem;
+  text-align: center;
+}
+.signup-container {
+  text-align: start;
+  display: flex;
+  margin-block-end: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup-text {
+  width: 70%;
+}
+.signup-text h5 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-block-end: 2rem;
+}
+.signup-text p {
+  color: rgb(0, 0, 0, 0.8);
+}
+.signup-button {
+  background-color: black;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin: 3rem 0;
+}
+.more-container {
+  text-align: start;
+  margin-block-end: 2rem;
+}
+.more {
+  display: flex;
+}
+.more-product {
+  flex: 3;
+}
+.more-product h6 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-block-end: 2rem;
+}
+
 /* animation */
 @keyframes fadeInAnimation {
   from {
@@ -493,5 +543,26 @@ main {
   .price-items {
     margin-bottom: 2rem;
     width: 80%;
+  }
+  /* Section footer */
+  footer {
+    padding: 7rem 1rem 0.5rem 1rem;
+  }
+  .signup-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .signup-text {
+    width: 100%;
+  }
+  .more {
+    flex-direction: column;
+  }
+  .more-product {
+    margin-block-end: 2rem;
+  }
+  .copyright {
+    margin-block-end: 2rem;
+    display: inline-block;
   }
 }
